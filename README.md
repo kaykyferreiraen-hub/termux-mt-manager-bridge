@@ -25,6 +25,8 @@ chmod +x saf-mt-manager.sh
 3. Host: `127.0.0.1` · Port: `8021` · Path: `/`
 4. Leave user/pass blank → **Save**
 
-## Screenshots
+## Where you start?
 
-https://photos.app.goo.gl/TiB5LN6Hv79RD87G7
+By default, you will always start at this directory: /data/data/com.termux
+
+To enter your Termux Home, just open 'files' → 'home' respectively.
