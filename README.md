@@ -20,13 +20,22 @@ chmod +x saf-mt-manager.sh
 ```
 
 ## MT Manager setup
-1. Start the server (option 1 in menu)
-2. In MT Manager sidebar → **⋮** → **Add network storage** → **FTP**
-3. Host: `127.0.0.1` · Port: `8021` · Path: `/`
-4. Leave user/pass blank → **Save**
+1. In MT Manager sidebar → **⋮** → **Add network storage** → **FTP**
+2. Host: `127.0.0.1` · Port: `8021` · Path: `/`
+3. Leave user/pass blank → **Save**
 
 ## Where you start?
 
 By default, you will always start at this directory: /data/data/com.termux
 
 To enter your Termux Home, just open 'files' → 'home' respectively.
+
+## How to start automatically
+
+You can make it start in the background by adding the following command in your .zshrc or .bashrc files:
+
+```bash
+./saf-mt-manager.sh silent
+```
+
+It will first check if the port is not being used. If the port is already open, it will not start.
